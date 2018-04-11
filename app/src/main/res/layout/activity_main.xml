@@ -1,0 +1,426 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.pastaquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pasta_dry" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:text="Pasta Quiz"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:imeOptions="actionDone"
+            android:inputType="textCapWords" />
+
+        <!--Question 1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In 2016, how many million tons of pasta was consumed in the world?" />
+
+            <RadioGroup
+                android:id="@+id/question_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/thirteen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13" />
+
+                <RadioButton
+                    android:id="@+id/twentythree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="23" />
+
+                <RadioButton
+                    android:id="@+id/nine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+        </LinearLayout>
+
+        <!--Question 2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 2"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="According to Euromonitor International, in 2016, who were the top three countries in pasta consumption?" />
+
+            <CheckBox
+                android:id="@+id/italy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Italy" />
+
+            <CheckBox
+                android:id="@+id/russia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Russia" />
+
+            <CheckBox
+                android:id="@+id/united_states"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="United States" />
+
+            <CheckBox
+                android:id="@+id/france"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="France" />
+
+            <CheckBox
+                android:id="@+id/china"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="China" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+
+        </LinearLayout>
+
+
+        <!--Question 3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 3"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is thought to be the oldest traced record of pasta?" />
+
+            <RadioGroup
+                android:id="@+id/question_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/secondCentury"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2nd Century" />
+
+                <RadioButton
+                    android:id="@+id/thirteenthCentury"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13th Century" />
+
+                <RadioButton
+                    android:id="@+id/fourthCentury"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4th Century" />
+
+                <RadioButton
+                    android:id="@+id/seventhCentury"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7th Century" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+
+        </LinearLayout>
+
+
+        <!--Question 4-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 4"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What type of pasta is in the picture below?" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/macaroni" />
+
+            <EditText
+                android:id="@+id/mac_input_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type of Pasta"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray">
+            </View>
+
+
+        </LinearLayout>
+
+        <!--Question 5-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 5"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What type of pasta is in the picture below?" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/fusili" />
+
+            <EditText
+                android:id="@+id/fusilli_input_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type of Pasta"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+
+        </LinearLayout>
+
+        <!--Question 6-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 6"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What type of pasta is in the picture below?" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/farfalle" />
+
+            <EditText
+                android:id="@+id/farfalle_input_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type of Pasta"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+        </LinearLayout>
+
+        <!--Question 7-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 7"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gigli is a type of pasta from the Tuscany region of Italy. Gigli translates to lilies. Which photo shows a Gigli pasta?" />
+
+
+            <RadioGroup
+                android:id="@+id/question_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/gigli"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+
+                    android:drawableRight="@drawable/gigli" />
+
+                <RadioButton
+                    android:id="@+id/radiatori"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/radiatori" />
+
+                <RadioButton
+                    android:id="@+id/rotelle"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/rotelle" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray"></View>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/getScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="displayScore"
+            android:text="Get Score!" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="reset"
+            android:text="Reset" />
+
+    </LinearLayout>
+
+
+</ScrollView>
